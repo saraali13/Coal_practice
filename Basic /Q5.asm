@@ -31,8 +31,9 @@ main PROC
 
     mov eax, SIZEOF myArray     ; EAX = 20 (total size in bytes)
     call WriteInt               
-    call Crlf                  
+    call Crlf 
 
-    exit
+;override the default size or type of memory  
+;mov al, BYTE PTR [esi]  ; Treat the memory at [esi] as a byte
 main ENDP
 END main
