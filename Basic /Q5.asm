@@ -6,7 +6,7 @@ myArray DWORD 10, 20, 30, 40 ,50  ; DWORD array
 .code
 main PROC
     mov eax, [myArray + 4]  ; Direct-offset Operand
-
+;[esi + (LENGTHOF arrayW - 1) * TYPE arrayW] for excessing the last element of an array
     ; Use OFFSET to get the address of myArray
     mov esi, OFFSET myArray     ; ESI points to the start of myArray
 
