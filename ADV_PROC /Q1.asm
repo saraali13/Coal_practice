@@ -8,7 +8,7 @@ Add PROC
     mov eax, [ebp+8]   ; First value
     add eax, [ebp+12]  ; Second value
     pop ebp
-    ret
+    ret 8; stack cleanup
 Add ENDP
 
 ;[ESP] -> Local variable
