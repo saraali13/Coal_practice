@@ -13,5 +13,5 @@ END main
 
 ;rep -- repeat with ecx (>0)
 ;repz and repnz (zero flag and ecx>0)
-;repe and repne 
+;repe and repne (zero flag 0--ne)
 
