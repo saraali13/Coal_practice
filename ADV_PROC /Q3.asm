@@ -5,3 +5,11 @@ AddTwo PROC
     leave
     ret
 AddTwo ENDP
+ ;push ebp
+;mov ebp, esp
+;sub esp, 4 ; 4-byte local var
+;mov DWORD PTR [ebp-4], 10
+;...
+;mov esp, ebp
+;pop ebp
+;ret
