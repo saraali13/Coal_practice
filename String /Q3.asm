@@ -1,3 +1,5 @@
+;CMPSB CMPSW CMPSD compare the bytes of soucre and destination string
+
 INCLUDE Irvine32.inc
 .data
 greater BYTE 'source > target',0 lessOrEqual BYTE 'source <target',0
@@ -20,3 +22,4 @@ call writestring
 endd:
 Exit
 main ENDP
+END main
