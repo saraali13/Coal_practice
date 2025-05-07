@@ -10,3 +10,10 @@ Add PROC
     pop ebp
     ret
 Add ENDP
+
+;[ESP] -> Local variable
+;[EBP - 4] -> Local variable
+;[EBP] -> Old EBP
+;[EBP + 4] -> Return address
+;[EBP + 8] -> First parameter (x)
+;[EBP + 12] -> Second parameter (y)
